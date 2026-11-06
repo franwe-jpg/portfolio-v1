@@ -7,7 +7,7 @@ import cloudflare from '@astrojs/cloudflare';
 // (currently just /api/chat) are bundled into the Worker.
 export default defineConfig({
   // Absolute base for canonical and Open Graph URLs.
-  site: 'https://francosolersistemas.com',
+  site: 'https://v1.francosolersistemas.com',
   output: 'static',
   // `prerenderEnvironment: 'node'` prerenders in Node instead of a workerd
   // worker. The workerd path needs a remote proxy session (and Cloudflare

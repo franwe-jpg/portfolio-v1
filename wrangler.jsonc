@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "portfolio-personal",
+  "name": "portfolio-v1",
 
   // No `main`: @astrojs/cloudflare supplies the Worker entrypoint itself and
   // emits the deployable config to dist/server/wrangler.json.
@@ -35,9 +35,10 @@
     }
   ],
 
-  // Astro sessions storage (auto-provisioned on the first deploy).
+  // Astro sessions storage. No `id`: Wrangler provisions a namespace for this
+  // Worker on the first deploy and writes the id back here.
   "kv_namespaces": [
-    { "binding": "SESSION", "id": "489c9b070846454bbc9fbed8fab6b602" }
+    { "binding": "SESSION" }
   ],
 
   // The site is served only on the custom domain, so zone WAF rules cannot be
@@ -45,9 +46,10 @@
   "workers_dev": false,
   "preview_urls": false,
 
+  // First version of the portfolio, kept online on its own subdomain. The apex
+  // domain belongs to the redesign (repo portfolio-personal).
   "routes": [
-    { "pattern": "francosolersistemas.com", "custom_domain": true },
-    { "pattern": "www.francosolersistemas.com", "custom_domain": true }
+    { "pattern": "v1.francosolersistemas.com", "custom_domain": true }
   ],
 
   "observability": {

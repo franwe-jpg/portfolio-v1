@@ -4,7 +4,9 @@
 
 <br>
 
-[![Live](https://img.shields.io/badge/●_LIVE-francosolersistemas.com-25d366?style=for-the-badge&labelColor=0b141a)](https://francosolersistemas.com)
+[![Live](https://img.shields.io/badge/●_LIVE-v1.francosolersistemas.com-25d366?style=for-the-badge&labelColor=0b141a)](https://v1.francosolersistemas.com)
+
+> Primera versión del portfolio. El rediseño vive en [franwe-jpg/portfolio-personal](https://github.com/franwe-jpg/portfolio-personal) y en francosolersistemas.com; esta versión sigue en línea en el subdominio `v1`.
 
 ![Astro](https://img.shields.io/badge/Astro_7-0b141a?style=flat-square&logo=astro&logoColor=ff5d01)
 ![TypeScript](https://img.shields.io/badge/TypeScript-0b141a?style=flat-square&logo=typescript&logoColor=3178c6)
